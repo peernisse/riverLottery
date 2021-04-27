@@ -22,8 +22,13 @@ This prediction is necessary to use the probability model. It uses application d
 
 <img src="./img/applications.jpg">
 
+<img src="./img/appsWeek.jpeg">
+
+
 ## Lottery Success Probability
 This model uses year, week, weekday, number of available permits, number of other applicants, and number of your group of friends who will apply for the same day to calculate a liklihood of winning a river trip permit.
+
+<img src="./ModelPreditions_MF_2022.jpeg">
 
 <hr/>
 # Data Sources
