@@ -165,8 +165,8 @@ hold<-data %>% anti_join(fill) #Records that are good and used to calculate esti
 
 nFill<-data %>% anti_join(fill) %>% #Calculate mean values from extant data
   select(-c(DATE,TOTAL_APPLICATIONS)) %>% 
-  group_by(RIVER,MONTH_DAY) %>% 
-  summarize(
+  dplyr::group_by(RIVER,MONTH_DAY) %>% 
+  dplyr::summarize(
     COUNT = length(AVAILABLE),
     MIN = min(AVAILABLE),
     MAX = max(AVAILABLE),
@@ -270,7 +270,7 @@ df_4<-outputdf %>%
   select(c(3,4,6,7:11)) %>% 
   mkSets(.)
 
-#Make one per river with year, week, weekday----------------------
+#Make one per river with yesr, week, weekday----------------------
 df_mf<-outputdf %>% 
   filter(RIVER_N==1) %>% 
   select(c(3,5,7:11)) %>% 
