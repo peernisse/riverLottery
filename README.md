@@ -1,7 +1,11 @@
+
+
+
 # riverLottery
 Machine learning regression models to predict river trip permit lottery success.
 
 <hr/>
+
 # Concept
 The most popular river trips in the USA are controlled by annual lotteries to determine who gets to float down that river. Thousands of applicants apply each year for just a handful of available trip launches per day in the spring - late summer season.
 
@@ -15,18 +19,21 @@ This project seeks to identify the days in a coming year where likelihood of lot
 * Hells Canyon Snake River
 
 <hr/>
+
 # Models
 
 ## Predict Applicants in Future Years
-This prediction is necessary to use the probability model. It uses application data from 2010-2021 to predict the number of applicants to be expected to apply for each day of the season. The number of applicants is on an increasing trend:
+This prediction is necessary to use the probability model. It uses application data from 2010-2021 to predict the number of applicants to be expected to apply for each day of the season in future years. The number of applicants is on an increasing trend:
 
 <img src="./img/applications.jpg">
+
+Permit application pressure is naturally around the time of higher river flows and warmer weather.
 
 <img src="./img/appsWeek.jpeg">
 
 
 ## Lottery Success Probability
-This model uses year, week, weekday, number of available permits, number of other applicants, and number of your group of friends who will apply for the same day to calculate a liklihood of winning a river trip permit.
+This model uses year, week, weekday, number of available permits, number of other applicants, and number of your group of friends who will apply for the same day to calculate a likelihood of winning a river trip permit.
 
 <img src="./ModelPreditions_MF_2022.jpeg">
 
