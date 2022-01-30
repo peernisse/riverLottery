@@ -14,11 +14,19 @@ options(scipen = 6)
 
 #Clear the python and tensorflow environments-----------------------
 ###Need to do a lot during testing
+#Ensure python tensorflow environment----------------
+use_condaenv('r-reticulate')
+
+use_condaenv('r-tensorflow')
+
+install_tensorflow()
+
+
 K <- backend()
-K$clear_session()
+#K$clear_session()
 
 #Ensure python tensorflow environment----------------
-#use_condaenv('r-reticulate')
+use_condaenv('r-reticulate')
 
 
 #Objectives-----------------------------

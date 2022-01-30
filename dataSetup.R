@@ -13,7 +13,7 @@ library(keras)
 library(tidyverse)
 library(tfdatasets)
 library(pdftools)
-library(tabulizer)
+#library(tabulizer)
 library(openxlsx)
 source("helpers.R")
 
@@ -270,7 +270,7 @@ df_4<-outputdf %>%
   select(c(3,4,6,7:11)) %>% 
   mkSets(.)
 
-#Make one per river with yesr, week, weekday----------------------
+#Make one per river with year, week, weekday----------------------
 df_mf<-outputdf %>% 
   filter(RIVER_N==1) %>% 
   select(c(3,5,7:11)) %>% 
@@ -300,6 +300,9 @@ df_short<-outputdf %>%
 
 
 #Make dataset where the total applications is to be predicted----------
+#THis is WIP it is going to try to predict the number of applicants
+#on each day of the upcoming year, using previous years' data
+#For 2022 I have just used the 2021 numbers
 
 df_pred_aps<-outputdf %>% 
   select(YEAR,WEEK,WDAY_N,TOTAL_APPLICATIONS) %>% 
