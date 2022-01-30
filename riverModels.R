@@ -11,7 +11,7 @@ library(tensorflow) #Neural Network Backend for Keras
 library(keras) #Neural Network Modeling
 library(plyr) #Data manipulation
 library(dplyr) # Data Manipulation
-library(caret) #Machine Learning Tools for Training and Validation
+#library(caret) #Machine Learning Tools for Training and Validation
 
 
 
