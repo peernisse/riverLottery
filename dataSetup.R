@@ -311,7 +311,8 @@ df_pred_aps<-outputdf %>%
 
 
 
-
+#Stash the dataset
+write.xlsx(data,'./data/lotteryData.xlsx',overwrite = TRUE)
 
 
 
